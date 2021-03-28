@@ -1,11 +1,11 @@
 #!/bin/sh
 
 ## configuration variables:
-VLAN=5
-IPV4_IP="10.0.5.3"
+VLAN=300
+IPV4_IP="10.0.30.3"
 # This is the IP address of the container. You may want to set it to match
 # your own network structure such as 192.168.5.3 or similar.
-IPV4_GW="10.0.5.1/24"
+IPV4_GW="10.0.30.1/24"
 # As above, this should match the gateway of the VLAN for the container
 # network as above which is usually the .1/24 range of the IPV4_IP
 
@@ -29,7 +29,7 @@ IPV6_GW=""
 FORCED_INTFC=""
 
 # container name; e.g. nextdns, pihole, adguardhome, etc.
-CONTAINER=nextdns
+CONTAINER=pihole
 
 ## network configuration and startup:
 CNI_PATH=/mnt/data/podman/cni

@@ -5,14 +5,14 @@
     {
       "type": "macvlan",
       "mode": "bridge",
-      "master": "br5",
-      "mac": "PUT YOUR GENERATED OWN MAC HERE",
+      "master": "br300",
+      "mac": "90-FD-84-95-93-21",
       "ipam": {
         "type": "static",
         "addresses": [
           {
-            "address": "10.0.5.3/24",
-            "gateway": "10.0.5.1"
+            "address": "10.0.30.3/24",
+            "gateway": "10.0.30.1"
           }
         ],
         "routes": [
